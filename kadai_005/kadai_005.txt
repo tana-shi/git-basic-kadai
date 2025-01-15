@@ -1,0 +1,43 @@
+shingotana@shingonoAir ~ % mkdir git_challenge
+shingotana@shingonoAir ~ % cd git_challenge
+shingotana@shingonoAir git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/shingotana/git_challenge/.git/
+shingotana@shingonoAir git_challenge % git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+shingotana@shingonoAir git_challenge % git add hello_world.txt
+shingotana@shingonoAir git_challenge % git commit -m "hello_world.txtを追加"
+[master (root-commit) 6e6ca17] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+shingotana@shingonoAir git_challenge % git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+shingotana@shingonoAir git_challenge % git add hello_world.txt
+shingotana@shingonoAir git_challenge % git commit -m "日本語訳を追記"
+[master 6a40ce9] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+shingotana@shingonoAir git_challenge % git log
+commit 6a40ce9c711530e4c0267fbca35377c3bd09fe5d (HEAD -> master)
+Author: samurai-terakoya <”shingo_tana626@icloud.com”>
+Date:   Wed Jan 15 21:02:39 2025 +0900
+
+    日本語訳を追記
+
+commit 6e6ca179d73ef502774493ad66c817049de27f84
+Author: samurai-terakoya <”shingo_tana626@icloud.com”>
+Date:   Wed Jan 15 20:59:27 2025 +0900
+
+    hello_world.txtを追加
+shingotana@shingonoAir git_challenge % git log --oneline      
+6a40ce9 (HEAD -> master) 日本語訳を追記
+6e6ca17 hello_world.txtを追加
+shingotana@shingonoAir git_challenge % 
