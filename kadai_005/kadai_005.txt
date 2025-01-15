@@ -1,0 +1,26 @@
+shingotana@shingonoAir git_challenge % git init
+Reinitialized existing Git repository in /Users/shingotana/git_challenge/.git/
+shingotana@shingonoAir git_challenge % git add "hello_world.txt"
+shingotana@shingonoAir git_challenge % git add /Users/shingotana/git_challenge/.git/
+shingotana@shingonoAir git_challenge % git add .
+shingotana@shingonoAir git_challenge % git add hello_world.txt
+shingotana@shingonoAir git_challenge % git status
+On branch pull_request
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+
+shingotana@shingonoAir git_challenge % git commit
+[pull_request d4f47ed] Hello,world! こんにちは、世界！
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+shingotana@shingonoAir git_challenge % git status
+On branch pull_request
+nothing to commit, working tree clean
+shingotana@shingonoAir git_challenge % git log
+commit d4f47ed57c03d0efa13434aa0f356222fdfd8970 (HEAD -> pull_request)
+Author: samurai-terakoya <”shingo_tana626@icloud.com”>
+Date:   Wed Jan 15 18:32:55 2025 +0900
+
+    Hello,world!
+    こんにちは、世界！
